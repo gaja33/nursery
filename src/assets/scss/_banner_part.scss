@@ -167,7 +167,7 @@
   }
 
   .bg_1 {
-    @include background("../img/banner.png");
+    @include background("../images/banner_1.png");
   }
 
   .owl-nav button.owl-next,
@@ -302,7 +302,7 @@
 .home_two_banner {
   .single_banner_part {
     &.home_two_bg {
-      @include background("../img/home_2_banner.png");
+      @include background("../images/banner_2.png");
       background-position: center right;
     }
 
@@ -443,7 +443,7 @@
 
 .animated_hero {
   .single_banner_part {
-    @include background("../img/banner_3.png");
+    @include background("../images/banner_3.png");
 
     &:after {
       display: none;
@@ -661,7 +661,7 @@
 //banner style 3 css here
 .banner_style_3 {
   .single_banner_part {
-    @include background("../img/banner_4.png");
+    @include background("../images/banner_4.png");
 
     &:after {
       background-image: -moz-linear-gradient(

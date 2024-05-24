@@ -29,11 +29,16 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/animate.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/lib/wow.min.js",
+              "src/assets/lib/custom.js",
+              "src/assets/lib/jquery.easing.1.3.js",
+              "src/assets/lib/jquery.parallax-scroll.js"
             ]
           },
           "configurations": {
