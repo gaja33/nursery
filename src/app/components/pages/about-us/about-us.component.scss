@@ -1,0 +1,508 @@
+@import "../../../../assets/scss/mixins";
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/reset";
+
+.breadcrumb_part {
+  @include background("../images/breadcrumb_bg.png");
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  @media #{$medium_device} {
+    height: 350px;
+  }
+  @media #{$tab} {
+    height: 350px;
+  }
+  .breadcrumb_iner {
+    text-align: center;
+    margin-top: 50px;
+    @media #{$tab} {
+      margin-top: 0;
+    }
+  }
+  h2 {
+    font-size: 55px;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 11px;
+    @media #{$medium_device} {
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 5px;
+    }
+    @media #{$tab} {
+      font-size: 25px;
+      line-height: 35px;
+      margin-bottom: 5px;
+    }
+  }
+  .breadcrumb_iner_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      font-size: 16px;
+      color: #c9c9d1;
+      &:hover {
+        color: $base_color;
+      }
+    }
+    p {
+      font-size: 16px;
+      color: #c9c9d1;
+      font-family: $font_1;
+    }
+    span {
+      margin: 0 5px;
+      color: #c9c9d1;
+    }
+  }
+  [class^="breadcrumb_animation_"],
+  [class*="breadcrumb_animation_"] {
+    position: absolute;
+    z-index: 1;
+  }
+  .breadcrumb_animation_4 {
+    left: 5%;
+    top: 30%;
+    right: auto;
+    bottom: auto;
+  }
+  .breadcrumb_animation_5 {
+    right: 8%;
+    top: 33%;
+    @media #{$mobile} {
+      display: none;
+    }
+    @media #{$tab_device} {
+      display: none;
+    }
+  }
+  .breadcrumb_animation_7 {
+    left: 15%;
+    bottom: 14%;
+  }
+  .breadcrumb_animation_10 {
+    right: 5%;
+    bottom: 25%;
+  }
+  .breadcrumb_animation_12 {
+    right: 31%;
+    bottom: 23%;
+  }
+  .breadcrumb_animation_13 {
+    right: 66%;
+    top: 30%;
+    @media #{$mobile} {
+      display: none;
+    }
+    @media #{$tab_device} {
+      display: none;
+    }
+  }
+}
+
+.about_section {
+  .img_section {
+    position: relative;
+    min-height: 490px;
+    z-index: 2;
+    @media #{$xs_mobile} {
+      min-height: 410px;
+    }
+    @media #{$large_mobile} {
+      min-height: 510px;
+    }
+    .about_img_1 {
+      position: absolute;
+      bottom: 35px;
+      z-index: -1;
+      left: 30px;
+      @media #{$mobile} {
+        bottom: 52px;
+        left: 30px;
+        max-width: 250px;
+      }
+      @media #{$tab_device} {
+        left: 30px;
+        max-width: 300px;
+      }
+    }
+    .about_img_1 {
+      position: absolute;
+      bottom: 35px;
+      z-index: -1;
+      left: 30px;
+      @media #{$mobile} {
+        bottom: 62px;
+        left: 30px;
+        max-width: 250px;
+      }
+      @media #{$tab_device} {
+        left: 30px;
+        max-width: 300px;
+      }
+    }
+    .about_img_2 {
+      @media #{$xs_mobile} {
+        max-width: 235px;
+      }
+    }
+    .about_img_3 {
+      position: absolute;
+      top: 80px;
+      right: 36px;
+      z-index: 1;
+      border-radius: 5px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+      @media #{$xs_mobile} {
+        max-width: 250px;
+        right: 0;
+      }
+    }
+  }
+  .about_section_content {
+    @media #{$big_device} {
+      padding-top: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
+    .list_content {
+      margin-top: 25px;
+      @media #{$tab} {
+        margin-top: 15px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          color: #32355d;
+          font-weight: 700;
+          font-size: 15px;
+          padding: 8px 0;
+          position: relative;
+          padding-left: 30px;
+          @media #{$tab} {
+            padding: 5px 0;
+            padding-left: 30px;
+          }
+          i {
+            color: $base_color;
+            margin-right: 7px;
+            position: absolute;
+            left: 0;
+            top: 12px;
+            @media #{$tab} {
+              top: 9px;
+            }
+          }
+        }
+      }
+    }
+    .btn_2 {
+      margin-top: 40px;
+      padding: 21px 44px;
+    }
+  }
+}
+
+//about section style 3
+.s3_about_section {
+  .img_section {
+    min-height: 410px;
+    @media #{$mobile} {
+      margin-top: 70px;
+    }
+
+    .about_img_4 {
+      position: absolute;
+      top: -35px;
+      z-index: -1;
+      right: 0;
+      @media #{$mobile} {
+        bottom: 52px;
+        left: 30px;
+        max-width: 250px;
+      }
+      @media #{$tab_device} {
+        left: 30px;
+        max-width: 300px;
+      }
+    }
+    .about_img_3 {
+      right: 30;
+    }
+    .about_img_2 {
+      margin-left: -30px;
+      @media #{$tab_device} {
+        margin-left: -20px;
+      }
+      @media #{$large_mobile} {
+        margin-left: 0;
+      }
+    }
+  }
+  .cu_btn {
+    font-family: $font_1;
+    font-weight: 700;
+  }
+}
+
+//about section style 4
+.s4_about_section {
+  z-index: 1;
+  position: relative;
+  .about_section_content {
+    h5 {
+      font-size: 18px;
+      color: $base_color;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+  }
+  .img_section {
+    min-height: auto;
+    @media #{$mobile} {
+      margin-top: 30px;
+    }
+  }
+  .about_img_7 {
+    position: absolute;
+    right: -30px;
+    top: 40px;
+    z-index: -1;
+    @media #{$mobile} {
+      right: 0;
+      top: 20px;
+    }
+  }
+  .about_img_5 {
+    position: absolute;
+    left: 9px;
+    bottom: 2px;
+    z-index: -1;
+    @media #{$mobile} {
+      left: 0;
+    }
+  }
+  .about_img_6 {
+    margin-left: 30px;
+    border-radius: 10px;
+    z-index: -1;
+    @media #{$mobile} {
+      margin-left: 0;
+    }
+    @media #{$tab_device} {
+      margin-left: 15px;
+    }
+  }
+
+  //animation icon
+  [class^="about_page_animation_"],
+  [class*="about_page_animation_"] {
+    position: absolute;
+    z-index: -1;
+  }
+  .about_page_animation_1 {
+    left: 7%;
+    top: 12%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .about_page_animation_2 {
+    left: 7%;
+    bottom: 20%;
+    img {
+      max-width: 50px;
+    }
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .about_page_animation_3 {
+    right: 7%;
+    top: 12%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .about_page_animation_4 {
+    right: 8%;
+    bottom: 8%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+}
+
+.single_team_section {
+  text-align: center;
+  position: relative;
+  @media #{$tab} {
+    margin-bottom: 30px;
+  }
+
+  .teacher_profile_img {
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    max-height: 250px;
+    width: 100%;
+    img {
+      border-radius: 5px 5px 0 0;
+      @include transform_time(0.3s);
+      transform: scale(1);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &:hover {
+    .teacher_profile_img {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 34px;
+    margin-bottom: 5px;
+    a {
+      color: $heading_color_2;
+      &:hover {
+        color: $base_color;
+      }
+    }
+    @media #{$tab} {
+      margin-top: 20px;
+    }
+    @media #{$medium_device} {
+      margin-top: 20px;
+    }
+  }
+  p {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .teacher_category {
+    font-size: 15px;
+    color: $white;
+    border-radius: 5px;
+    background-color: $base_color;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 151px;
+    height: 31px;
+    line-height: 31px;
+    bottom: 76px;
+    display: inline-block;
+    @media #{$mobile} {
+      bottom: 92px;
+    }
+    @media #{$tab_device} {
+      bottom: 92px;
+    }
+    @media #{$medium_device} {
+      bottom: 62px;
+    }
+  }
+}
+.col-lg-4 {
+  &:nth-child(2n + 1) {
+    .single_team_section {
+      .teacher_category {
+        background-color: #4ba9ff;
+      }
+    }
+  }
+  &:nth-child(3n + 1) {
+    .single_team_section {
+      .teacher_category {
+        background-color: #31c9a8;
+      }
+    }
+  }
+}
+.team_section {
+  background-color: #f6f7fa;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  [class^="team_animation_"],
+  [class*=" team_animation_"] {
+    position: absolute;
+    z-index: -1;
+  }
+  .team_animation_1 {
+    left: -20px;
+    top: -100px;
+  }
+  .team_animation_2 {
+    left: 7%;
+    top: 35%;
+  }
+  .team_animation_3 {
+    left: 7%;
+    bottom: 12%;
+  }
+  .team_animation_4 {
+    right: 0%;
+    top: -10%;
+  }
+  .team_animation_5 {
+    right: 10%;
+    bottom: 31%;
+  }
+}
+.single_page_team {
+  padding: 90px 0 120px;
+  @media #{$mobile} {
+    padding: 80px 0 50px;
+  }
+  @media #{$tab_device} {
+    padding: 100px 0 70px;
+  }
+  .single_team_section {
+    margin-top: 50px;
+    @media #{$tab} {
+      margin-top: 0;
+    }
+  }
+}

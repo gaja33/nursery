@@ -196,6 +196,51 @@
   }
 }
 
+.menu_fixed {
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(4, 13, 41, 0.05);
+  &.header {
+    .navbar .nav-link {
+      color: $menu_color;
+      &:hover {
+        color: $base_color;
+      }
+      @media (max-width: 991px) {
+        color: $menu_color;
+        &:hover {
+          color: $base_color;
+        }
+      }
+    }
+  }
+  .cu_btn {
+    background-color: transparent;
+    border: 1px solid $base_color;
+    color: $base_color;
+    &:hover {
+      border: 1px solid $base_color;
+    }
+    @media (max-width: 991px) {
+      background-color: transparent;
+      border: 1px solid $base_color;
+      color: $base_color;
+      &:hover {
+        border: 1px solid $base_color;
+        box-shadow: 0 3px 29px 0px rgba(0, 0, 0, 0.07);
+      }
+    }
+  }
+  img {
+    -webkit-filter: none;
+    filter: none;
+  }
+}
+
 @media (min-width: 991px) {
   .header_part .header .navbar .nav-item > .nav-link {
     position: relative;
