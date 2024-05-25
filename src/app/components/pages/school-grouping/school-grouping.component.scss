@@ -1,0 +1,562 @@
+@import "../../../../assets/scss/mixins";
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/reset";
+
+.breadcrumb_part {
+  @include background("../images/breadcrumb_bg.png");
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  @media #{$medium_device} {
+    height: 350px;
+  }
+  @media #{$tab} {
+    height: 350px;
+  }
+  .breadcrumb_iner {
+    text-align: center;
+    margin-top: 50px;
+    @media #{$tab} {
+      margin-top: 0;
+    }
+  }
+  h2 {
+    font-size: 55px;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 11px;
+    @media #{$medium_device} {
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 5px;
+    }
+    @media #{$tab} {
+      font-size: 25px;
+      line-height: 35px;
+      margin-bottom: 5px;
+    }
+  }
+  .breadcrumb_iner_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      font-size: 16px;
+      color: #c9c9d1;
+      &:hover {
+        color: $base_color;
+      }
+    }
+    p {
+      font-size: 16px;
+      color: #c9c9d1;
+      font-family: $font_1;
+    }
+    span {
+      margin: 0 5px;
+      color: #c9c9d1;
+    }
+  }
+  [class^="breadcrumb_animation_"],
+  [class*="breadcrumb_animation_"] {
+    position: absolute;
+    z-index: 1;
+  }
+  .breadcrumb_animation_4 {
+    left: 5%;
+    top: 30%;
+    right: auto;
+    bottom: auto;
+  }
+  .breadcrumb_animation_5 {
+    right: 8%;
+    top: 33%;
+    @media #{$mobile} {
+      display: none;
+    }
+    @media #{$tab_device} {
+      display: none;
+    }
+  }
+  .breadcrumb_animation_7 {
+    left: 15%;
+    bottom: 14%;
+  }
+  .breadcrumb_animation_10 {
+    right: 5%;
+    bottom: 25%;
+  }
+  .breadcrumb_animation_12 {
+    right: 31%;
+    bottom: 23%;
+  }
+  .breadcrumb_animation_13 {
+    right: 66%;
+    top: 30%;
+    @media #{$mobile} {
+      display: none;
+    }
+    @media #{$tab_device} {
+      display: none;
+    }
+  }
+}
+
+.school_grouping_section {
+  .img_section {
+    position: relative;
+    min-height: 490px;
+    z-index: 2;
+    @media #{$xs_mobile} {
+      min-height: 410px;
+    }
+    @media #{$large_mobile} {
+      min-height: 510px;
+    }
+    .school_grouping_img_1 {
+      position: absolute;
+      bottom: 35px;
+      z-index: -1;
+      left: 30px;
+      @media #{$mobile} {
+        bottom: 52px;
+        left: 30px;
+        max-width: 250px;
+      }
+      @media #{$tab_device} {
+        left: 30px;
+        max-width: 300px;
+      }
+    }
+    .school_grouping_img_1 {
+      position: absolute;
+      bottom: 35px;
+      z-index: -1;
+      left: 30px;
+      @media #{$mobile} {
+        bottom: 62px;
+        left: 30px;
+        max-width: 250px;
+      }
+      @media #{$tab_device} {
+        left: 30px;
+        max-width: 300px;
+      }
+    }
+    .school_grouping_img_2 {
+      @media #{$xs_mobile} {
+        max-width: 235px;
+      }
+    }
+    .school_grouping_img_3 {
+      position: absolute;
+      top: 80px;
+      right: 36px;
+      z-index: 1;
+      border-radius: 5px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+      @media #{$xs_mobile} {
+        max-width: 250px;
+        right: 0;
+      }
+    }
+  }
+  .school_grouping_section_content {
+    @media #{$big_device} {
+      padding-top: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
+    .list_content {
+      margin-top: 25px;
+      @media #{$tab} {
+        margin-top: 15px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          color: #32355d;
+          font-weight: 700;
+          font-size: 15px;
+          padding: 8px 0;
+          position: relative;
+          padding-left: 30px;
+          @media #{$tab} {
+            padding: 5px 0;
+            padding-left: 30px;
+          }
+          i {
+            color: $base_color;
+            margin-right: 7px;
+            position: absolute;
+            left: 0;
+            top: 12px;
+            @media #{$tab} {
+              top: 9px;
+            }
+          }
+        }
+      }
+    }
+    .btn_2 {
+      margin-top: 40px;
+      padding: 21px 44px;
+    }
+  }
+}
+
+//school_grouping section style 4
+.s4_school_grouping_section {
+  z-index: 1;
+  position: relative;
+  .school_grouping_section_content {
+    h5 {
+      font-size: 18px;
+      color: $base_color;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+  }
+  .img_section {
+    min-height: auto;
+    @media #{$mobile} {
+      margin-top: 30px;
+    }
+  }
+  .school_grouping_img_7 {
+    position: absolute;
+    right: -30px;
+    top: 40px;
+    z-index: -1;
+    @media #{$mobile} {
+      right: 0;
+      top: 20px;
+    }
+  }
+  .school_grouping_img_5 {
+    position: absolute;
+    left: 9px;
+    bottom: 2px;
+    z-index: -1;
+    @media #{$mobile} {
+      left: 0;
+    }
+  }
+  .school_grouping_img_6 {
+    margin-left: 30px;
+    border-radius: 10px;
+    z-index: -1;
+    @media #{$mobile} {
+      margin-left: 0;
+    }
+    @media #{$tab_device} {
+      margin-left: 15px;
+    }
+  }
+
+  //animation icon
+  [class^="school_grouping_page_animation_"],
+  [class*="school_grouping_page_animation_"] {
+    position: absolute;
+    z-index: -1;
+  }
+  .school_grouping_page_animation_1 {
+    left: 7%;
+    top: 12%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .school_grouping_page_animation_2 {
+    left: 7%;
+    bottom: 20%;
+    img {
+      max-width: 50px;
+    }
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .school_grouping_page_animation_3 {
+    right: 7%;
+    top: 12%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .school_grouping_page_animation_4 {
+    right: 8%;
+    bottom: 8%;
+    @media #{$mobile} {
+      img {
+        max-width: 50px;
+      }
+    }
+    @media #{$tab_device} {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+}
+
+.our_gallery {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  .grid-item,
+  .grid-sizer {
+    width: 25%;
+
+    @media #{$xs_mobile} {
+      width: 100%;
+    }
+
+    @media #{$large_mobile} {
+      width: 50%;
+    }
+  }
+
+  .grid-item {
+    float: left;
+    height: 362px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media #{$xs_mobile} {
+      height: 300px;
+    }
+
+    @media #{$large_mobile} {
+      height: 300px;
+    }
+
+    @media #{$tab_device} {
+      height: 200px;
+    }
+
+    @media #{$medium_device} {
+      height: 200px;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      @include transform_time(0.3s);
+      background-color: rgb(254 75 123 / 0);
+    }
+
+    .grid_item_content {
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 2;
+      padding: 40px;
+      @include transform_time(0.3s);
+      @media #{$tab} {
+        padding: 20px;
+        bottom: 0;
+      }
+      @media #{$medium_device} {
+        padding: 20px;
+      }
+    }
+
+    &:hover {
+      .grid_item_content {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0;
+      }
+
+      &:after {
+        background-color: rgb(254 75 123 / 0.7);
+      }
+    }
+    .gallery_item_icon {
+      margin-bottom: 20px;
+      max-width: 90px;
+      @media #{$tab_device} {
+        display: none;
+      }
+
+      @media #{$medium_device} {
+        display: none;
+      }
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 900;
+      color: $white;
+      margin-bottom: 2px;
+      @media #{$tab_device} {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 500;
+      color: #dad9d9;
+      @media #{$tab_device} {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .grid_item_width2 {
+    width: 50%;
+
+    @media #{$xs_mobile} {
+      width: 100%;
+    }
+
+    @media #{$large_mobile} {
+      width: 50%;
+    }
+  }
+
+  .grid_item_height2 {
+    height: 724px;
+
+    @media #{$xs_mobile} {
+      height: 300px;
+    }
+
+    @media #{$large_mobile} {
+      height: 300px;
+    }
+
+    @media #{$tab_device} {
+      height: 400px;
+    }
+
+    @media #{$medium_device} {
+      height: 400px;
+    }
+  }
+
+  .bg_1 {
+    background-image: url(../../../../assets/images/one.png);
+  }
+
+  .bg_2 {
+    background-image: url(../../../../assets/images/two.png);
+  }
+
+  .bg_3 {
+    background-image: url(../../../../assets/images/three.png);
+  }
+
+  .bg_4 {
+    background-image: url(../../../../assets/images/four.png);
+  }
+
+  .bg_5 {
+    background-image: url(../../../../assets/images/five.png);
+  }
+
+  .bg_6 {
+    background-image: url(../../../../assets/images/six.png);
+  }
+
+  .bg_7 {
+    background-image: url(../../../../assets/images/serven.png);
+  }
+
+  .bg_8 {
+    background-image: url(../../../../assets/images/eight.png);
+  }
+
+  .bg_9 {
+    background-image: url(../../../../assets/images/nine.png);
+  }
+
+  .bg_10 {
+    background-image: url(../../../../assets/images/ten.png);
+  }
+
+  [class^="gallery_animation_"],
+  [class*=" gallery_animation_"] {
+    position: absolute;
+    z-index: -1;
+    @media #{$tab} {
+      display: none;
+    }
+  }
+
+  .gallery_animation_1 {
+    left: 5%;
+    top: 5%;
+  }
+
+  .gallery_animation_2 {
+    left: 13%;
+    top: 5%;
+    @media #{$tab} {
+      display: none;
+    }
+
+    @media #{$medium_device} {
+      left: 20%;
+      top: 0;
+    }
+  }
+}
+
+.gallery_style_2 {
+  @media #{$tab} {
+    .grid-item {
+      &:after {
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+      .grid_item_content {
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        bottom: 0;
+        padding: 20px;
+      }
+    }
+  }
+  .grid-item,
+  .grid-sizer {
+    width: 100%;
+  }
+}
