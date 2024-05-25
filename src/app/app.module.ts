@@ -9,9 +9,10 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 import { EnrollmentComponent } from './components/shared/enrollment/enrollment.component';
+import { TestimonialComponent } from './components/shared/testimonial/testimonial.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, AboutUsComponent, PageNotFoundComponent, EnrollmentComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, AboutUsComponent, PageNotFoundComponent, EnrollmentComponent, TestimonialComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
