@@ -1,5 +1,6 @@
 @import "../../../../assets/scss/mixins";
 @import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/buttons";
 //@import "../../../../assets/scss/banner_part";
 
 .header_part {
@@ -10,7 +11,7 @@
     @media #{$mobile} {
       text-align: center;
     }
-    a {
+    a.color-white {
       display: inline-block;
       color: $white;
     }
