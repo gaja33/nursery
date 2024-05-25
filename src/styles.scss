@@ -5,3 +5,126 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url(../src/assets/fonts/css/all.min.css);
+
+.banner_part .owl-nav button.owl-next,
+.banner_part .owl-nav button.owl-prev {
+  border: 2px solid transparent;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.banner_part .owl-nav button.owl-next:hover,
+.banner_part .owl-nav button.owl-prev:hover {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #fe4b7b;
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .banner_part .owl-nav button.owl-next,
+  .banner_part .owl-nav button.owl-prev {
+    left: 20px;
+  }
+}
+.banner_part .owl-nav button.owl-next {
+  left: auto;
+  right: 42px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .banner_part .owl-nav button.owl-next {
+    right: 20px;
+  }
+}
+
+.banner_part .owl-item.active .banner_iner h2,
+.banner_part .owl-item.active .banner_iner p {
+  -webkit-animation: animmate_In_Up 1s ease 0s both;
+  animation: animmate_In_Up 1s ease 0s both;
+}
+
+.banner_part .owl-item.active .banner_animation_1,
+.banner_part .owl-item.active .banner_animation_2,
+.banner_part .owl-item.active .banner_animation_3,
+.banner_part .owl-item.active .banner_animation_4 {
+  -webkit-animation: animmate_In_Up 1s ease 0s both;
+  animation: animmate_In_Up 1s ease 0s both;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.banner_part .owl-item.active .banner_iner h2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.banner_part .owl-item.active .banner_iner p {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.banner_part .owl-item.active .banner_iner .btn_2 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation: animmate_In_Down 1s ease 0s both;
+  animation: animmate_In_Down 1s ease 0s both;
+}
+
+@-webkit-keyframes animmate_In_Up {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateXY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes animmate_In_Up {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animmate_In_Down {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateXY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes animmate_In_Down {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

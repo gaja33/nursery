@@ -1,6 +1,6 @@
 @import "../../../../assets/scss/mixins";
 @import "../../../../assets/scss/variables";
-@import "../../../../assets/scss/banner_part";
+//@import "../../../../assets/scss/banner_part";
 
 .header_part {
   background-color: $white;
@@ -191,6 +191,39 @@
           float: right;
           transform: rotate(180deg);
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .header_part .header .navbar .nav-item > .nav-link {
+    position: relative;
+    z-index: 1;
+    &:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../../../../assets/images/menu_bg_shape.png);
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+      z-index: -1;
+      transition: all 0.3s;
+      opacity: 0;
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+    &.active {
+      &:before {
+        opacity: 1;
       }
     }
   }
